@@ -12,24 +12,17 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # Login to Docker Hub using GitHub Secrets
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      # Build Docker image for frontend
-      - name: Build frontend Docker image
-        run: |
-          docker build -t cv-frontend .
+      - name: Build frontend Docker image (NO CACHE)
+        run: docker build --no-cache -t cv-frontend .
 
-      # Tag image with your Docker Hub username
       - name: Tag image
-        run: |
-          docker tag cv-frontend ${{ secrets.DOCKER_USERNAME }}/cv-frontend:latest
+        run: docker tag cv-frontend ${{ secrets.DOCKER_USERNAME }}/cv-frontend:latest
 
-      # Push to Docker Hub
-      - name: Push frontend image
-        run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/cv-frontend:latest
+      - name: Push image
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/cv-frontend:latest
