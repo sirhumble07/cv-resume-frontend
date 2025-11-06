@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF- 8"/>
+    <meta name="viewport" content="width=device- width, initial- scale=1"/>
+    <title>Victor Nwoke - Azure Solutions Architect</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<header class="hero">
+    <div class="hero- content">
+        <h1 class="name">Victor Nwoke</h1>
+        <p class="role">Azure Solutions Architect • Infrastructure & Cloud Engineer</p>
+
+        <p class="contact">
+            <a href="mailto:victornwoke147@outlook.com">victornwoke147@outlook.com</a> •
+            <a href="https://linkedin.com/in/victornwoke" target="_blank">LinkedIn</a> •
+            <a href="https://github.com/sirhumble07" target="_blank">GitHub</a> •
+            <a href="https://humbletech.cloud" target="_blank">Portfolio</a>
+        </p>
+
+        <p class="location">Nottingham, UK</p>
+
+        <div class="visitor- box">
+            <span>👀 Visitors: </span>
+            <span id="count" class="visitor- count">—</span>
+        </div>
+    </div>
+</header>
+
+<main class="content">
+
+    <!- -  Summary - - >
+    <section class="card">
+        <h2>Professional Summary</h2>
+        <p>
+            Infrastructure and Azure Cloud Engineer with 5+ years of experience designing, automating, and
+            securing enterprise- scale cloud environments. Specialized in Azure architecture, infrastructure automation,
+            Landing Zones, networking, DR, monitoring, and Microsoft 365/Entra ID identity management.
+        </p>
+        <p>
+            Delivered 60% faster deployments, 40% fewer audit findings, 35% MTTR reduction through automation,
+            and 99.9% uptime during Azure migrations supporting over 400+ users.
+        </p>
+    </section>
+
+    <!- -  Skills - - >
+    <section class="card">
+        <h2>Core Skills</h2>
+        <ul class="skills- grid">
+            <li><strong>Cloud Platforms:</strong> Azure, M365, AWS</li>
+            <li><strong>IaC:</strong> Terraform, Bicep, ARM</li>
+            <li><strong>Security:</strong> RBAC, PIM, Azure Policy</li>
+            <li><strong>Networking:</strong> DNS, DHCP, VPN, ExpressRoute</li>
+            <li><strong>Compute:</strong> VMs, Scale Sets, Load Balancers</li>
+            <li><strong>Identity:</strong> Entra ID, Conditional Access</li>
+            <li><strong>Automation:</strong> PowerShell, Python</li>
+            <li><strong>DevOps:</strong> GitHub Actions, Docker, ACR, AKS</li>
+        </ul>
+    </section>
+
+    <!- -  Experience - - >
+    <section class="card">
+        <h2>Professional Experience</h2>
+
+        <h3>Cloud Engineer - ABC of Cloud Computing (United States)
+            <span class="dates">Dec 2024 – Present</span></h3>
+        <ul>
+            <li>Designed Terraform/Bicep Azure infrastructure reducing provisioning time by 60%.</li>
+            <li>Implemented RBAC, PIM, Azure Policy, and subscription governance standards.</li>
+            <li>Deployed monitoring automation lowering MTTR by 35%.</li>
+        </ul>
+
+        <h3>Systems Administrator - Dignus Group Limited (UK)
+            <span class="dates">May 2024 – July 2025</span></h3>
+        <ul>
+            <li>Managed Azure hybrid infrastructure and enterprise Windows environments.</li>
+            <li>Automated tasks via PowerShell reducing manual workload by 40%.</li>
+        </ul>
+
+        <h3>Cloud Support Engineer - 54Gene Nig. Ltd
+            <span class="dates">Sept 2022 – Apr 2024</span></h3>
+        <ul>
+            <li>Migrated workloads to Azure maintaining 99.99% SLA.</li>
+            <li>Managed M365, Intune, and automated patch management.</li>
+        </ul>
+
+        <h3>IT Administrator - ICM Capital Ltd (Abuja)
+            <span class="dates">Aug 2021 – Sept 2022</span></h3>
+        <ul>
+            <li>Migrated 20+ servers/storage to Azure achieving +50% performance gains.</li>
+            <li>Implemented ASR + Backup delivering <2hr RTO.</li>
+        </ul>
+    </section>
+
+    <!- -  STAR PROJECTS - - >
+<section class="card">
+    <h2>Key Projects (STAR Method)</h2>
+
+    <!- -  Project 1 - - >
+    <div class="project">
+        <h3>Landing Zone & Governance (Terraform- Based Multi- Subscription Architecture)</h3>
+        <p><strong> The organisation needed a secure, standardised Azure environment across multiple subscriptions to support increasing workloads and improve governance and audit readiness.</strong></p>
+        <p>I designed and implemented enterprise- grade Landing Zones enforcing Azure governance controls and consistent resource configuration across dev, test, and production.</p>
+        <p></p>
+        <ul>
+            <li>Built Terraform modules for RBAC, PIM roles, Azure Policy assignments, resource tagging, diagnostic settings, and guardrails.</li>
+            <li>Automated deployment of management groups, subscriptions, VNETs, storage, Log Analytics, and baseline security configurations.</li>
+            <li>Implemented PIM, least- privilege access, policy- driven compliance, subscription locks, and monitoring across the environment.</li>
+        </ul>
+        <p>Achieved 30% reduction in policy violations, improved audit compliance, and delivered a scalable governance foundation adopted across all engineering teams.</p>
+    </div>
+
+    <!- -  Project 2 - - >
+    <div class="project">
+        <h3>Terraform CI/CD Pipeline (Automated Infrastructure Provisioning)</h3>
+        <p><strong>Deployments were slow, inconsistent, and manually executed, creating configuration drift across environments.</strong></p>
+        <p>I built a fully automated IaC pipeline enabling safe, repeatable, and version- controlled deployments.</p>
+        <p></p>
+        <ul>
+            <li>Created modular Terraform architecture using remote state, workspaces, state locking, and reusable VNET/NSG/storage modules.</li>
+            <li>Built CI/CD pipelines via GitHub Actions with automated plan/apply, approvals, linting, and policy validation.</li>
+            <li>Integrated drift detection and automatic rollback mechanisms for failed deployments.</li>
+        </ul>
+        <p>Reduced provisioning time by 60%, eliminated configuration drift, and enabled reliable, repeatable releases across all environments.</p>
+    </div>
+
+    <!- -  Project 3 - - >
+    <div class="project">
+        <h3><strong>DR & BCDR Implementation (ASR + Azure Backup for 50+ Workloads)</strong></h3>
+        <p><strong>Critical workloads had weak recovery plans, exposing the business to data loss and prolonged outages during incidents.</strong></p>
+        <p>Implemented a robust business continuity and disaster recovery solution.</p>
+        <p></p>
+        <ul>
+            <li>Deployed Azure Site Recovery (ASR) across 50+ workloads including VMs, storage, and databases.</li>
+            <li>Configured automated failover/failback, runbooks, replication policies, and backup retention schedules.</li>
+            <li>Conducted DR drills, created documentation, and trained support teams on emergency operations.</li>
+        </ul>
+        <p>Achieved &lt;1- hour RTO, significantly strengthened resilience, and ensured critical applications remained recoverable under any outage scenario.</p>
+    </div>
+
+    <!- -  Project 4 - - >
+    <div class="project">
+        <h3>3- Tier Azure Architecture (Secure Web/App/DB Environment)</h3>
+        <p><strong>The business needed a scalable, secure cloud architecture to host multiple production workloads.</strong></p>
+        <p>I designed and implemented a secure, high- availability 3- tier cloud environment.</p>
+        <p></p>
+        <ul>
+            <li>Built VNETs with subnets, NSGs, private endpoints, route tables, Application Gateway, Load Balancer, and Azure Firewall.</li>
+            <li>Deployed secure web, app, and database tiers with DDoS protection, private access, and logging.</li>
+            <li>Integrated Log Analytics, Application Insights, and proactive alerting for observability.</li>
+        </ul>
+        <p>Delivered a secure, high- performance architecture supporting multiple workloads, improving reliability and reducing security incidents.</p>
+    </div>
+
+    <!- -  Project 5 - - >
+    <div class="project">
+        <h3>Containerized .NET Deployment (Docker → ACR → GitHub Actions → AKS)</h3>
+        <p><strong>The development team needed faster release cycles and consistent environments.</strong></p>
+        <p>I containerized a .NET application and automated its deployment using modern DevOps practices.</p>
+        <p></p>
+        <ul>
+            <li>Dockerized the .NET application using multi- stage builds and optimized image layers.</li>
+            <li>Pushed images to Azure Container Registry and enabled vulnerability scanning.</li>
+            <li>Built GitHub Actions workflows including build, test, scan, and deployment stages.</li>
+            <li>Deployed to Azure Web App and validated deployment patterns for AKS.</li>
+        </ul>
+        <p>Improved deployment consistency, reduced release errors, and established a production- ready CI/CD workflow.</p>
+    </div>
+
+    <!- -  Project 6 - - >
+    <div class="project">
+        <h3>Monitoring Automation & AIOps (KQL + Alerts + Remediation)</h3>
+        <p><strong>Teams were reacting slowly to incidents due to lack of proactive monitoring.</strong></p>
+        <p>I built automated monitoring to detect and resolve issues early.</p>
+        <p></p>
+        <ul>
+            <li>Integrated Azure Monitor, Log Analytics, diagnostic settings, and custom KQL alerts.</li>
+            <li>Developed PowerShell and Python remediation scripts triggered by alert actions.</li>
+            <li>Created dashboards centralizing logs for compute, network, identity, and storage.</li>
+        </ul>
+        <p>Reduced MTTR by 35% and enabled proactive issue detection before service impact.</p>
+    </div>
+
+    <!- -  Project 7 - - >
+    <div class="project">
+        <h3>Azure Front Door (Global Routing, WAF & Performance Testing)</h3>
+        <p><strong>The organisation required improved global routing, performance, and security for distributed workloads.</strong></p>
+        <p>Validate and configure Azure Front Door for global content delivery.</p>
+        <p></p>
+        <ul>
+            <li>Configured Front Door Standard/Premium, WAF rules, caching, routing paths, and health probes.</li>
+            <li>Conducted global failover and latency optimisation testing.</li>
+            <li>Documented architecture, routing strategy, and recommended best practices.</li>
+        </ul>
+        <p>Improved global performance, strengthened perimeter security, and created validated architectural patterns for future workloads.</p>
+    </div>
+
+</section>
+
+<!- -  Education - - >
+    <section class="card">
+        <h2>Education & Certifications</h2>
+      <ul>
+        <li>HND, Management -  Abia State University, Nigeria (2018)</li>
+        <li>Diploma, Computer Science -  Silver Training Group | DigiHub Technology Solutions</li>
+        <li>Microsoft Certified: Azure Solutions Architect Expert (AZ- 305), Azure Administrator Associate (AZ- 104) </li>
+        <li>Microsoft Fundamentals: Azure, Microsoft 365, AI, Security/Compliance/Identity</li>
+        <li>Applied Skills: Active Directory Domain Services (AD DS), Secure Storage, Azure Management Tasks</li>
+        <li>HarvardX CS50 -  Introduction to Computer Science</li>
+        <li>Microsoft Power Up Program -  Power Apps, Power Automate, Power BI</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Blog</h2>
+      <p>What I learned building this project: 
+        <a href="https://dev.to" target="_blank">Read my blog post</a>
+      </p>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
